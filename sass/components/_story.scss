@@ -17,6 +17,7 @@
 
   @include respond(phone) {
     transform: skewX(0);
+    font-size: 1rem;
   }
 
   &__shape {
@@ -31,6 +32,9 @@
 
     @include respond(phone) {
       transform: translateX(-3rem) skewX(0);
+      -webkit-shape-outside: circle(0% at 0% 0%);
+      shape-outside: circle(137% at 0% 0%);
+      margin: 2rem;
     }
   }
 
@@ -45,7 +49,7 @@
     transform: skewX(12deg);
 
     @include respond(phone) {
-      transform: translateX(-3rem) skewX(0);
+      transform: translateX(-1rem) skewX(0);
     }
   }
 

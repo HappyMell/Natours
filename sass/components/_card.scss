@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
@@ -91,6 +92,10 @@
         ),
         url(../img/nat-7.jpg);
     }
+
+    @include respond(phone) {
+      height: 20rem;
+    }
   }
 
   &__heading {
@@ -103,6 +108,10 @@
     top: 12rem;
     right: 2rem;
     width: 75%;
+
+    @include respond(phone) {
+      font-size: 2.4rem;
+    }
   }
 
   &__heading-span {
@@ -147,6 +156,10 @@
         font-size: 1.5rem;
         padding: 1rem;
 
+        @include respond(phone) {
+          font-size: 1.2rem;
+        }
+
         &:not(:last-child) {
           border-bottom: 1px solid $color-grey-light-2;
         }
@@ -177,7 +190,8 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  // @include respond(tab-port)
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
@@ -209,7 +223,7 @@
       left: 0;
       transform: translate(0);
       width: 100%;
-      padding: 7rem 4rem 4rem;
+      padding: 2rem 4rem 4rem;
     }
 
     &__price-box {
@@ -217,7 +231,7 @@
     }
 
     &__price-value {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 }

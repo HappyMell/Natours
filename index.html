@@ -18,6 +18,8 @@
 
   <body>
 
+
+    <!--Navigation -->
     <div class="navigation">
 
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -39,7 +41,7 @@
         </ul>
       </nav>
     </div>
-
+    <!--Header-->
     <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.png" alt="Logo" class="header__logo" />
@@ -54,6 +56,8 @@
     </header>
 
     <main>
+
+      <!--About-->
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
@@ -82,6 +86,8 @@
             </div>
           </div>
       </section>
+
+      <!--Features-->
       <section class="section-features">
         <div class="row">
           <div class="col-1-of-4">
@@ -122,7 +128,7 @@
                 </div>
         </div>
       </section>
-
+<!--Tours-->
       <section class="section-tours" id="section-tours">
           <div class="u-center-text u-margin-bottom-big">
               <h2 class="heading-secondary">
@@ -231,6 +237,8 @@
                <a href="#" class="btn btn--green">Discover all tours</a>
             </div>
       </section>
+
+      <!--Stories-->
       <section class="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
@@ -276,6 +284,8 @@
             <a href="#" class="btn-text">Read all stories &rarr;</a>
          </div>
       </section>
+
+      <!--Booking-->
       <section class="section-book">
         <div class="row">
           <div class="book">
@@ -322,9 +332,16 @@
       </section>
     </main>
 
+    <!--Footer-->
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+        <picture class="footer__logo">
+          <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+            <img srcset="img/logo-green-1x.png 1x,  img/logo-green-2x.png 2x" alt="Full logo">
+
+        </picture>
+
       </div>
       <div class="row">
         <div class="col-1-of-2">
