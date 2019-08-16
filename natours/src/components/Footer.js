@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import LogoSm from "../img/logo-green-small-1x.png";
 import LogoLg from "../img/logo-green-2x.png";
+import Link from "react-router-dom/Link";
 
 class Footer extends Component {
   render() {
@@ -8,8 +9,8 @@ class Footer extends Component {
       <footer className='footer'>
         <div className='footer__logo-box'>
           <picture className='footer__logo'>
-            <source srcset={LogoSm} media='(max-width: 37.5em)' />
-            <img srcset={LogoLg} alt='Full logo' />
+            <source srcSet={LogoSm} media='(max-width: 37.5em)' />
+            <img srcSet={LogoLg} alt='Full logo' />
           </picture>
         </div>
         <div className='row'>
@@ -17,29 +18,29 @@ class Footer extends Component {
             <div className='footer__navigation'>
               <ul className='footer__list'>
                 <li className='footer__item'>
-                  <a href='#' className='footer__link'>
+                  <Link to='#' href='#' className='footer__link'>
                     Company
-                  </a>
+                  </Link>
                 </li>
                 <li className='footer__item'>
-                  <a href='#' className='footer__link'>
+                  <Link to='#' href='#' className='footer__link'>
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li className='footer__item'>
-                  <a href='#' className='footer__link'>
+                  <Link to='#' href='#' className='footer__link'>
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li className='footer__item'>
-                  <a href='#' className='footer__link'>
+                  <Link to='#' href='#' className='footer__link'>
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li className='footer__item'>
-                  <a href='#' className='footer__link'>
+                  <Link to='#' href='#' className='footer__link'>
                     Terms
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -47,9 +48,9 @@ class Footer extends Component {
           <div className='col-1-of-2'>
             <p className='footer__copyright'>
               Built by{" "}
-              <a href='#' className='footer__link'>
+              <Link to='#' href='#' className='footer__link'>
                 Mellisa Madrid
-              </a>
+              </Link>
             </p>
           </div>
         </div>

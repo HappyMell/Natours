@@ -53,6 +53,18 @@
     transition: all 0.3s;
   }
 
+  &__select {
+    width: 34rem;
+    height: 4rem;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    margin: inherit;
+    @include respond(phone) {
+      width: 20rem;
+    }
+  }
+
   &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;

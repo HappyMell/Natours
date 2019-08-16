@@ -9,7 +9,7 @@ class Stories extends Component {
     return (
       <section className='section-stories'>
         <div className='bg-video'>
-          <video className='bg-video__content' autoplay muted loop>
+          <video className='bg-video__content' autoPlay muted loop>
             <source src={Video} type='video/mp4' />
             <source src={Video2} type='video.webm' />
             Your browser is not supported
@@ -65,11 +65,6 @@ class Stories extends Component {
               </p>
             </div>
           </div>
-        </div>
-        <div className='u-center-text u-margin-top-huge'>
-          <a href='#' className='btn-text'>
-            Read all stories &rarr;
-          </a>
         </div>
       </section>
     );

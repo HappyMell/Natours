@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import Stories from "../components/Stories";
 
 class Book extends Component {
   render() {
     return (
       <div>
-        <h1>Booking Page</h1>
+        <Stories />
       </div>
     );
   }

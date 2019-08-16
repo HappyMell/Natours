@@ -6,12 +6,12 @@ class CardFront extends Component {
     const { price } = this.props;
     return (
       <div>
-        <div class='card__cta'>
-          <div class='card__price-box'>
-            <p class='card__price-only'>Only</p>
-            <p class='card__price-value'>${price}</p>
+        <div className='card__cta'>
+          <div className='card__price-box'>
+            <p className='card__price-only'>Only</p>
+            <p className='card__price-value'>${price}</p>
           </div>
-          <Link to='/book' class='btn btn-white'>
+          <Link to='/book' className='btn btn-white'>
             Book now!
           </Link>
         </div>

@@ -151,6 +151,14 @@
 
     &::before {
       top: -0.8rem;
+
+      @include respond(tab-port) {
+        top: -0.7rem;
+      }
+
+      @include respond(tab-land) {
+        top: -0.7rem;
+      }
     }
 
     &::after {

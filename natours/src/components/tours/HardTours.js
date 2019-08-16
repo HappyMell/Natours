@@ -3,6 +3,34 @@ import CardFront from "./CardFront";
 import CardBack from "./CardBack";
 
 class HardTours extends Component {
+  state = {
+    details: [
+      {
+        day: "7 day tour",
+        numberOfPeople: "Up to 5 people",
+        tourGuides: "1 tour guides",
+        accomodation: "Sleep in provided tents",
+        difficulty: "Difficulty: Hard",
+        id: 1
+      },
+      {
+        day: "4 day tour",
+        numberOfPeople: "Up to 10 people",
+        tourGuides: "2 tour guides",
+        accomodation: "Sleep in provided tents",
+        difficulty: "Difficulty: Hard",
+        id: 2
+      },
+      {
+        day: "2 day tour",
+        numberOfPeople: "Up to 15 people",
+        tourGuides: "2 tour guides",
+        accomodation: "Sleep in provided tents",
+        difficulty: "Difficulty: Hard",
+        id: 3
+      }
+    ]
+  };
   render() {
     const { name, name1, name2 } = this.props;
 
@@ -13,23 +41,17 @@ class HardTours extends Component {
         </div>
         <div className='row'>
           <div className='col-1-of-3'>
-            <div class='card'>
-              <div class='card__side card__side--front'>
-                <div class='card__picture card__picture--10'>&nbsp;</div>
-                <h4 class='card__heading'>
-                  <span class='card__heading-span card__heading-span--10'>
+            <div className='card'>
+              <div className='card__side card__side--front'>
+                <div className='card__picture card__picture--10'>&nbsp;</div>
+                <h4 className='card__heading'>
+                  <span className='card__heading-span card__heading-span--10'>
                     {name}
                   </span>
                 </h4>
-                <CardFront
-                  day='7 day tour'
-                  numberOfPeople='Up to 5 people'
-                  tourGuides='1 tour guides'
-                  accomodation='Sleep in provided tents'
-                  difficulty='Difficulty: Hard'
-                />
+                <CardFront details={this.state.details} />
               </div>
-              <div class='card__side card__side--back card__side--back-10'>
+              <div className='card__side card__side--back card__side--back-10'>
                 <CardBack price='795' />
               </div>
             </div>
@@ -38,20 +60,14 @@ class HardTours extends Component {
             <div className='card'>
               <div className='card__side card__side--front'>
                 <div className='card__picture card__picture--11'>&nbsp;</div>
-                <h4 class='card__heading'>
-                  <span class='card__heading-span card__heading-span--11'>
+                <h4 className='card__heading'>
+                  <span className='card__heading-span card__heading-span--11'>
                     {name1}
                   </span>
                 </h4>
-                <CardFront
-                  day='4 day tour'
-                  numberOfPeople='Up to 10 people'
-                  tourGuides='2 tour guides'
-                  accomodation='Sleep in provided tents'
-                  difficulty='Difficulty: Hard'
-                />
+                <CardFront details={this.state.details} />
               </div>
-              <div class='card__side card__side--back card__side--back-11'>
+              <div className='card__side card__side--back card__side--back-11'>
                 <CardBack price='697' />
               </div>
             </div>
@@ -65,13 +81,7 @@ class HardTours extends Component {
                     {name2}
                   </span>
                 </h4>
-                <CardFront
-                  day='2 day tour'
-                  numberOfPeople='Up to 15 people'
-                  tourGuides='2 tour guides'
-                  accomodation='Sleep in provided tents'
-                  difficulty='Difficulty: Hard'
-                />
+                <CardFront details={this.state.details} />
               </div>
               <div className='card__side card__side--back card__side--back-12'>
                 <CardBack price='597' />

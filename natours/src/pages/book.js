@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import Header from "../components/Header";
+import BookingForm from "../components/Booking";
 
 class Book extends Component {
   render() {
     return (
       <div>
-        <h1>Booking Page</h1>
+        <Header main='Booking' under='See whats happening now' />
+        <BookingForm />
       </div>
     );
   }
